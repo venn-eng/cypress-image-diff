@@ -1,7 +1,7 @@
 {
-  "name": "cypress-image-diff-js",
-  "version": "0.0.0",
-  "description": "Visual regression testing tool with cypress",
+  "name": "cypress-image-diff-js-venn",
+  "version": "0.0.1",
+  "description": "Visual regression testing tool with cypress edited for Venn purposes",
   "main": "./dist/command.js",
   "types": "./types/command.d.ts",
   "exports": {
@@ -21,9 +21,12 @@
       "default": "./dist/plugin.js"
     }
   },
-  "files": ["dist", "types"],
+  "files": [
+    "dist",
+    "types"
+  ],
   "bin": {
-    "cypress-image-diff": "./bin/cypress-image-diff.js"
+    "cypress-image-diff-venn": "bin/cypress-image-diff.js"
   },
   "scripts": {
     "lint": "eslint src/ cypress/",
@@ -33,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uktrade/cypress-image-diff.git"
+    "url": "git+https://github.com/venn-eng/cypress-image-diff.git"
   },
   "release": {
     "branches": [
