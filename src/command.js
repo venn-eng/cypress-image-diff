@@ -48,6 +48,8 @@ const compareSnapshotCommand = () => {
 
       const defaultRetryOptions = {
         limit: 1,
+        doNotFail: true,
+        yield: 'value',
         log: (percentage) => {
           const prefix = percentage <= testThreshold ? 'PASS' : 'FAIL'
           cy.log(`${prefix}: Image difference percentage ${percentage}`)
